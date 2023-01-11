@@ -80,7 +80,6 @@ document.getElementById("copiar").addEventListener("click", function copiar() {
         toast.addEventListener("mouseleave", Swal.resumeTimer);
       },
     });
-
     Toast.fire({
       icon: "success",
       title: "Texto Copiado!",
@@ -91,3 +90,5 @@ document.getElementById("copiar").addEventListener("click", function copiar() {
 function  limpiar(){
   document.getElementById("caja-texto").reset();
 }
+
+outputResponse.innerHTML ='<div class="mensaje"><label id="palabra_dos" class="mensaje-dos">${mensaje}</label></div>';
