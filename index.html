@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/reset.css" />
+    <link rel="stylesheet" href="css/sweetalert2.min.css" />
+    <title>Encriptar y Desencriptar</title>
+  </head>
+  <body class="principal">
+    <header>
+      <section class="logo">
+        <img src="images/Logo.png" alt="logo" />
+      </section>
+    </header>
+      <section class="caja-de-texto">
+        <textarea id="caja-texto" placeholder="Ingrese el texto aqui" autofocus></textarea>
+      </section>
+      <div class="warning">
+        <img src="images/exclamacion.svg" alt="info" />
+        <p>Solo letras minúsculas y sin acentos.</p>
+      </div>
+      <div class="botones">
+        <button id="encriptar" class="encriptar" type="button" autofocus>
+          <label for="encriptar">Encriptar</label>
+        </button>
+        <button id="desencriptar" class="desencriptar" type="button" autofocus>
+          <label for="desencriptar">Desencriptar</label>
+        </button>
+      </div>
+
+      <section class="rectangulo">
+        <div>
+          <div class="muñeco">
+            <img id="muñeco" src="images/Muñeco.png" alt="muñeco" />
+          </div>
+          <div class="mensaje">
+            <p id="palabra_uno" class="mensaje-uno">
+              Ningún mensaje fue encontrado
+            </p>
+            <label id="palabra_dos" class="mensaje-dos"
+              >Ingresa el texto que desees encriptar o desencriptar</label
+            >
+          </div>
+          <button id="copiar" class="copiar" type="button" autofocus>
+            <label for="copiar">Copiar</label>
+          </button>
+        </div>
+      </section>
+    <script src="js/sweetalert2.min.js"></script>
+    <script type="text/javascript" src="js/script.js"></script>
+    <!--<script src="js/nieve.js"></script>-->
+    <script src="js/sweetalert2.all.min.js"></script>
+  </body>
+</html>
